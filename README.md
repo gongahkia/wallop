@@ -13,11 +13,11 @@ Tinder for recreational fighters.
 
 Sick of polite smalltalk and gentle interactions? 
 
-Presenting [`Wallop`](https://github.com/gongahkia/wallop), the web app that cuts right to the chase. 
+Presenting `Wallop`, the web app that cuts right to the chase. 
   
 We match fighters who want to throw hands without the bullshit. Calling all martial artists, amateur boxers, keyboard warriors or weekend tweakers - this is your time to shine.
 
-[`Wallop`](https://github.com/gongahkia/wallop) features 
+`Wallop` features
 
 * ✅ No-nonsense user verification
 * 🥋 Skill-level matching that doesn't lie
@@ -25,7 +25,7 @@ We match fighters who want to throw hands without the bullshit. Calling all mart
 * 📍 Public meetup spots for group accountability
 * 🤝 Comprehensive consent mechanisms
 
-What are you waiting for? [Get started](#usage) with [`Wallop`](https://github.com/gongahkia/wallop) today!
+What are you waiting for? [Get started](#usage) with `Wallop` today!
 
 ## Credit
 
@@ -33,17 +33,22 @@ Concept-wise, `Wallop` takes much inspiration from [Rumblr](https://rumblr.webfl
 
 I've slept on the idea until now, but hopefully I have done it justice.
 
-## Screenshot
-
-> TODO add images here
-
-![](./asset/reference/screenshot-1.png)
-![](./asset/reference/screenshot-2.png)
-![](./asset/reference/screenshot-3.png)
-
 ## Usage
 
-> TODO add details here
+[`Wallop`](https://github.com/gongahkia/wallop) is **NOW LIVE** at [https://wallop.vercel.app/](https://wallop.vercel.app/).
+
+If you want to build [`Wallop`](https://github.com/gongahkia/wallop) locally, see instructions [here](./src/README.md).
+
+## Screenshot
+
+![](./asset/reference/screenshot-1.png)
+![](./asset/reference/screenshot-4.png)
+![](./asset/reference/screenshot-5.png)
+![](./asset/reference/screenshot-6.png)
+![](./asset/reference/screenshot-7.png)
+![](./asset/reference/screenshot-8.png)
+![](./asset/reference/screenshot-2.png)
+![](./asset/reference/screenshot-3.png)
 
 ## Disclaimer
 
