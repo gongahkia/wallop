@@ -1,7 +1,7 @@
 [![](https://img.shields.io/badge/wallop_1.0.0-up-green)](https://github.com/gongahkia/imaya/releases/tag/1.0.0) 
 
 > [!NOTE]  
-> [`Wallop`](https://github.com/gongahkia/wallop) is now live at [ttps://wallop.vercel.app](https://wallop.vercel.app)!
+> [`Wallop`](https://github.com/gongahkia/wallop) is now live at [https://wallop.vercel.app](https://wallop.vercel.app)!
   
 > [!IMPORTANT]  
 > Please read through [this disclaimer](#disclaimer) before using [Wallop](https://github.com/gongahkia/wallop).
