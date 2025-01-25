@@ -10,18 +10,23 @@ export default function AboutPage() {
         </CardHeader>
         <CardContent className="space-y-4">
           <p className="text-center">
-            Wallop is a satirical app concept exploring the idea of "Equal rights, equal fights" in a humorous and
-            fictional context.
+            Wallop is a satirical app concept exploring the absurdity of modern dating apps by 
+            transposing their mechanics onto the intentionally preposterous premise of 
+            consensual fighting.
           </p>
           <div className="flex flex-col items-center space-y-2">
+          <p>
+            Source code can be found 
             <Link
-              href="https://github.com/gongahkia/piranesi"
+              href="https://github.com/gongahkia/wallop"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-500 hover:underline"
             >
-              Source Code
+              here
             </Link>
+            .
+          </p>
             <p>
               Made by{" "}
               <Link
@@ -32,15 +37,20 @@ export default function AboutPage() {
               >
                 Gabriel Ong
               </Link>
+              .
             </p>
+            <p>
+              Find out more 
             <Link
               href="https://gongahkia.github.io/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-500 hover:underline"
             >
-              Find out more here
+              here
             </Link>
+            .
+            </p>
           </div>
           <p className="text-center text-sm text-gray-500 mt-4">
             Remember: This is a fictional app. Always resolve conflicts peacefully and legally in the real world.
