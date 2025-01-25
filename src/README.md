@@ -13,4 +13,4 @@ $ npx shadcn@latest add button card input label switch tabs
 $ npm run dev
 ```
 
-Then visit [``]().
+Then visit [`http://localhost:3000`](http://localhost:3000).

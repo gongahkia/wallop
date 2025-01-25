@@ -16,7 +16,7 @@ export default function AboutPage() {
           </p>
           <div className="flex flex-col items-center space-y-2">
           <p>
-            Source code can be found 
+            Source code can be found{" "}
             <Link
               href="https://github.com/gongahkia/wallop"
               target="_blank"
@@ -40,7 +40,7 @@ export default function AboutPage() {
               .
             </p>
             <p>
-              Find out more 
+              Find out more{" "}
             <Link
               href="https://gongahkia.github.io/"
               target="_blank"
