@@ -20,9 +20,7 @@ export default function RegisterPage() {
       alert("Passwords don't match!")
       return
     }
-    // In a real app, we would send this data to an API
     console.log("Registered:", { username, password })
-    // Redirect to dashboard after successful registration
     router.push("/dashboard")
   }
 

@@ -18,7 +18,6 @@ export default function SignInPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     if (username === "username" && password === "password") {
-      // Successful login
       router.push("/dashboard")
     } else {
       setError("Invalid username or password")

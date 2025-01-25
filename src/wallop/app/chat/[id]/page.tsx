@@ -29,7 +29,6 @@ export default function IndividualChatPage() {
     if (newMessage.trim()) {
       setMessages([...messages, { sender: "You", text: newMessage }])
       setNewMessage("")
-      // Simulate a response after a short delay
       setTimeout(() => {
         setMessages((prev) => [...prev, { sender: profile.name, text: "Ready to rumble? Let's set up our match!" }])
       }, 1000)
