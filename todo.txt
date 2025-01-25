@@ -1,3 +1,5 @@
+x (A) add the entire portion below to a pseudo legal disclaimer all fighters must click through before using wallop to begin with
+
 (A) add actual database integration either mongodb or postgressql interaction with vercel to store user profiles
 (A) add actual user profiles
 (A) allow a proper matching system that actually works
@@ -8,71 +10,3 @@
 (A) add skill-level matching
 (A) add safety protocol guidelines screen and bad user reporting
 (A) add comprehrensive consent mechanics to ensure there is no coercion
-(A) add the entire portion below to a pseudo legal disclaimer all fighters must click through before using wallop to begin with
-
-### Important Notice: Consent, Liability, and Responsibility
-
-#### 1. Purpose of the Application
-
-This application is designed **exclusively** to connect consenting individuals interested in casual, non-lethal, and non-violent recreational fights. The platform emphasizes mutual consent, fairness, and sportsmanship. This app does **not** promote, encourage, or condone violence, illegal activities, or harmful behavior of any kind.
-
-#### 2. User Conduct
-
-By using this platform, all users agree to:  
-
-* Engage in fights only where **mutual consent** has been explicitly obtained.  
-* Follow local laws and regulations regarding physical altercations and public gatherings.  
-* Ensure that the agreed-upon fight does not endanger bystanders, violate public peace, or infringe on property rights.  
-
-The platform strictly prohibits:  
-
-* Any form of violence or activity that goes beyond mutual and recreational purposes.  
-* Exploitation, coercion, or manipulation to engage others in fights.  
-* Any form of illegal or unsafe activity.  
-
-Users found violating these terms may be banned and, where appropriate, reported to authorities.
-
-#### 3. Liability Waiver
-
-By participating in any activity facilitated through this platform, you explicitly acknowledge and agree that:  
-
-* You are solely responsible for your actions, decisions, and participation in fights arranged via this app.  
-* The developers, operators, and affiliates of this platform shall **not** be held liable for any injury, damage, or loss resulting from your use of the platform or participation in fights.  
-* You fully release the platform and its operators from any liability related to disputes, physical harm, or legal consequences arising from activities arranged through the app.
-
-#### 4. Assumption of Risk
-
-Engaging in physical combat or fights carries inherent risks, including the potential for physical injury or emotional distress. By using this platform, you acknowledge that you are fully aware of these risks and voluntarily assume them.
-
-#### 5. Age and Competence
-
-All users must:  
-
-* Be at least **18 years old** (or the age of legal adulthood in their jurisdiction).  
-* Be of sound mind and body, capable of consenting to and participating in physical activities.  
-
-This platform prohibits underage users or individuals who cannot give informed consent from participating.
-
-#### 6. No Professional Mediation or Oversight
-
-The platform does not provide professional referees, medical personnel, or any oversight for the fights. Users are solely responsible for agreeing upon fight rules, ensuring fair play, and arranging for any necessary safety measures or supervision.
-
-#### 7. Compliance with Local Laws
-
-It is the responsibility of users to ensure that all activities arranged through this platform comply with the laws of their jurisdiction. The platform does not guarantee or certify that participation in fights is legally permissible in any specific location.
-
-#### 8. Indemnity 
-
-By using this application, you agree to indemnify, defend, and hold harmless the developers, operators, and affiliates of this platform from any claims, damages, or liabilities arising from your use of the app, including but not limited to:  
-
-* Injuries to yourself or others.  
-* Legal consequences resulting from your actions.  
-* Damages to property or third parties.
-
-#### 9. Termination of Access
-
-The platform reserves the right to suspend or terminate access to any user who violates these terms or engages in behavior deemed harmful, illegal, or contrary to the platform's intended purpose.
-
-#### 10. As-Is Disclaimer
-
-This application is provided **as is** without any guarantees, warranties, or assurances of safety or legality. Users are advised to consult with a qualified attorney regarding the legality of their activities in their specific jurisdiction.
