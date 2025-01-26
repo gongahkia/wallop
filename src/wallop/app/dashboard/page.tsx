@@ -4,7 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { ArrowLeft, ArrowRight, BoxIcon as Boxing, Trophy, Frown } from "lucide-react"
+import { ArrowLeft, ArrowRight, BoxIcon as Trophy, Frown } from "lucide-react"
 import { RandomBackground } from "@/components/RandomBackground"
 import { Avatar } from "@/components/Avatar"
 
