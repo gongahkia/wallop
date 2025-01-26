@@ -17,14 +17,18 @@ export default function AboutPage() {
               consensual fighting.
             </p>
             <div className="flex flex-col items-center space-y-2">
-              <Link
-                href="https://github.com/gongahkia/piranesi"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500 hover:underline"
-              >
-                Source Code
-              </Link>
+              <p>
+                Source code can be found{" "}
+                <Link
+                  href="https://github.com/gongahkia/piranesi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 hover:underline"
+                >
+                  here
+                </Link>
+                .
+              </p>
               <p>
                 Made by{" "}
                 <Link
@@ -35,15 +39,20 @@ export default function AboutPage() {
                 >
                   Gabriel Ong
                 </Link>
+                .
               </p>
+              <p>
+                Find out more{" "}
               <Link
                 href="https://gongahkia.github.io/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-500 hover:underline"
               >
-                Find out more here
+                here
               </Link>
+              .
+              </p>
             </div>
             <p className="text-center text-sm text-gray-500 mt-4">
               Remember: This is a fictional app. Always resolve conflicts peacefully and legally in the real world.
