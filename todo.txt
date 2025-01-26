@@ -3,19 +3,17 @@ x (A) add profile pictures
 x (A) create and add about a 100 more fake users
 x (A) add actual user profiles
 x (A) allow users to log if they lost or won a fight and reflect that loss or win counter on their profile, include this on the personal chat screen and on the dashboard profile screen
-
-(A) add an actual simulated matching system where a number of the people that the user swipes match on matches then back
-(A) add a a linked register and log in system where registered in users can then log in (saved locally only not to a database)
-(A) tweak so that the dashboard and chat should be inaccessible if you haven't logged in
-(A) add a comprehensive health and consent declaration page to ensure users are okay before using the app
-(A) add a SHARE MY PROFILE and SHARE MY FIGHT button to legitimise the encounter
-
-(A) add actual database integration either mongodb or postgressql interaction with vercel to store user profiles
-(A) allow a proper matching system that actually works
-(A) implement user authentication and verification of their profiles
-(A) clean up the README.md and ensure further compliance with all local laws
-(A) add location integration for each relevant fight
-(A) actually add proper user verification 
-(A) add skill-level matching
-(A) add safety protocol guidelines screen and bad user reporting
-(A) add comprehrensive consent mechanics to ensure there is no coercion
+x (A) add an actual simulated matching system where a number of the people that the user swipes match on matches then back
+x (A) add a a linked register and log in system where registered in users can then log in (saved locally only not to a database)
+x (A) tweak so that the dashboard and chat should be inaccessible if you haven't logged in
+x (A) add a comprehensive health and consent declaration page to ensure users are okay before using the app
+x (A) add a SHARE MY PROFILE and SHARE MY FIGHT button to legitimise the encounter
+x (A) add actual database integration either mongodb or postgressql interaction with vercel to store user profiles
+x (A) allow a proper matching system that actually works
+x (A) implement user authentication and verification of their profiles
+x (A) clean up the README.md and ensure further compliance with all local laws
+x (A) add location integration for each relevant fight
+x (A) actually add proper user verification 
+x (A) add skill-level matching
+x (A) add safety protocol guidelines screen and bad user reporting
+x (A) add comprehrensive consent mechanics to ensure there is no coercion
