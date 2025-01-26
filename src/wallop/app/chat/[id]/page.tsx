@@ -11,22 +11,9 @@ import { RandomBackground } from "@/components/RandomBackground"
 import { Avatar } from "@/components/Avatar"
 
 const mockMatches = [
-  {
-    id: 4,
-    name: "Bruce Lee",
-    age: 32,
-    style: "Jeet Kune Do",
-    bio: "Be water, my friend.",
-    avatar: "/avatars/bruce-lee.jpg",
-  },
-  {
-    id: 5,
-    name: "Muhammad Ali",
-    age: 30,
-    style: "Boxing",
-    bio: "Float like a butterfly, sting like a bee.",
-    avatar: "/avatars/muhammad-ali.jpg",
-  },
+  { id: 51, name: "Elias Drake", age: 34, style: "Shadow Arts", bio: "The unseen strikes the hardest.", avatar: "https://images.pexels.com/photos/2903985/pexels-photo-2903985.jpeg" },
+  { id: 52, name: "Selina Frost", age: 27, style: "Ice Dancer", bio: "Grace in the cold's embrace.", avatar: "https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg" },
+  { id: 53, name: "Axel Fury", age: 29, style: "Flame Combat", bio: "Burn brighter, fight harder.", avatar: "https://images.pexels.com/photos/1671325/pexels-photo-1671325.jpeg" },
 ]
 
 const currentUser = {

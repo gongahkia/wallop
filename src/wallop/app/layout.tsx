@@ -5,7 +5,7 @@ import Link from "next/link"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Wallop - Equal rights, equal fights",
+  title: "Wallop 🥊",
   description: "A satirical app for fictional friendly fisticuffs",
 }
 

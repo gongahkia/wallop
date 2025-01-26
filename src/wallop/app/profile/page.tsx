@@ -32,7 +32,6 @@ export default function ProfileAndSettingsPage() {
 
   const handleProfileSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Here you would typically send the updated profile to your backend
     console.log("Updated profile:", profile)
     alert("Profile updated successfully!")
   }
@@ -42,7 +41,6 @@ export default function ProfileAndSettingsPage() {
   }
 
   const handleSettingsSave = () => {
-    // Here you would typically send the updated settings to your backend
     console.log("Updated settings:", settings)
     alert("Settings saved successfully!")
   }
