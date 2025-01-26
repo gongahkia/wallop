@@ -5,14 +5,14 @@ import { useParams, useRouter } from "next/navigation"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { ArrowLeft, MessageSquare, ThumbsUp, ThumbsDown, Flag } from "lucide-react"
+import { ArrowLeft, MessageSquare, ThumbsUp, ThumbsDown, Flag, Trophy, Frown } from "lucide-react"
 import { RandomBackground } from "@/components/RandomBackground"
 import { Avatar } from "@/components/Avatar"
 
 const mockMatches = [
-  { id: 51, name: "Elias Drake", age: 34, style: "Shadow Arts", bio: "The unseen strikes the hardest.", avatar: "https://images.pexels.com/photos/2903985/pexels-photo-2903985.jpeg" },
-  { id: 52, name: "Selina Frost", age: 27, style: "Ice Dancer", bio: "Grace in the cold's embrace.", avatar: "https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg" },
-  { id: 53, name: "Axel Fury", age: 29, style: "Flame Combat", bio: "Burn brighter, fight harder.", avatar: "https://images.pexels.com/photos/1671325/pexels-photo-1671325.jpeg" },
+  { id: 51, name: "Elias Drake", age: 34, style: "Shadow Arts", bio: "The unseen strikes the hardest.", avatar: "https://images.pexels.com/photos/2903985/pexels-photo-2903985.jpeg", fightStatus: "won" },
+  { id: 52, name: "Selina Frost", age: 27, style: "Ice Dancer", bio: "Grace in the cold's embrace.", avatar: "https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg", fightStatus: "lost" },
+  { id: 53, name: "Axel Fury", age: 29, style: "Flame Combat", bio: "Burn brighter, fight harder.", avatar: "https://images.pexels.com/photos/1671325/pexels-photo-1671325.jpeg", fightStatus: null },
 ]
 
 export default function ProfilePage() {
@@ -23,6 +23,7 @@ export default function ProfilePage() {
   const [isUpvoted, setIsUpvoted] = useState(false)
   const [isDownvoted, setIsDownvoted] = useState(false)
   const [isReported, setIsReported] = useState(false)
+  const [fightStatus, setFightStatus] = useState<"won" | "lost" | null>(null)
 
   if (!profile) {
     return <div>Profile not found</div>
@@ -44,6 +45,10 @@ export default function ProfilePage() {
 
   const handleStartChat = () => {
     router.push(`/chat/${id}`)
+  }
+
+  const handleFightOutcome = (outcome: "won" | "lost") => {
+    setFightStatus(outcome)
   }
 
   return (
@@ -68,7 +73,7 @@ export default function ProfilePage() {
               </Button>
             </div>
             <p className="text-lg mb-6">{profile.bio}</p>
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center mb-4">
               <Button variant="default" onClick={handleStartChat}>
                 <MessageSquare className="mr-2" /> Start Chat
               </Button>
@@ -99,6 +104,26 @@ export default function ProfilePage() {
                 </Button>
               </div>
             </div>
+            <div className="flex justify-center space-x-4">
+              <Button variant={fightStatus === "won" ? "default" : "outline"} onClick={() => handleFightOutcome("won")}>
+                <Trophy className="mr-2" /> I won
+              </Button>
+              <Button
+                variant={fightStatus === "lost" ? "default" : "outline"}
+                onClick={() => handleFightOutcome("lost")}
+              >
+                <Frown className="mr-2" /> I lost
+              </Button>
+            </div>
+            {fightStatus && (
+              <p className="text-center mt-4">
+                {fightStatus === "won" ? (
+                  <span className="text-green-500">You won against this fighter!</span>
+                ) : (
+                  <span className="text-red-500">You lost to this fighter.</span>
+                )}
+              </p>
+            )}
           </CardContent>
         </Card>
       </div>
