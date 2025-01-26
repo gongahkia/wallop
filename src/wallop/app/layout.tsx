@@ -26,11 +26,11 @@ export default function RootLayout({
               <Link href="/dashboard" className="hover:underline">
                 Dashboard
               </Link>
-              <Link href="/profile" className="hover:underline">
-                Profile & Settings
-              </Link>
               <Link href="/chat" className="hover:underline">
                 Chats
+              </Link>
+              <Link href="/profile" className="hover:underline">
+                Profile & Settings
               </Link>
               <Link href="/about" className="hover:underline">
                 About
