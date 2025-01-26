@@ -9,7 +9,7 @@ interface AvatarProps {
 export function Avatar({ src, alt, size = 40 }: AvatarProps) {
   return (
     <div className={`relative rounded-full overflow-hidden`} style={{ width: size, height: size }}>
-      <Image src={src || "/placeholder.svg"} alt={alt} layout="fill" objectFit="cover" />
+      <Image src={src || "/placeholder.svg"} alt={alt} width={size} height={size} className="object-cover"/>
     </div>
   )
 }

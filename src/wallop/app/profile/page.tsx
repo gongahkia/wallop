@@ -16,7 +16,7 @@ export default function ProfileAndSettingsPage() {
     age: 30,
     style: "Mixed Martial Arts",
     bio: "Ready to rumble!",
-    avatar: "/avatars/john-doe.jpg",
+    avatar: "https://i.pinimg.com/736x/18/16/0b/18160ba745948426c3ff62d666fb2ecf.jpg",
   })
 
   const [settings, setSettings] = useState({
