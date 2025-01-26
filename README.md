@@ -1,5 +1,5 @@
-[![](https://img.shields.io/badge/wallop_1.0.0-build_up-dark_green)](https://github.com/gongahkia/imaya/releases/tag/1.0.0) 
-[![](https://img.shields.io/badge/wallop_2.0.0-deployment_up-green)](https://github.com/gongahkia/imaya/releases/tag/2.0.0) 
+[![](https://img.shields.io/badge/wallop_1.0.0-build_up-dark_green)](https://github.com/gongahkia/wallop/releases/tag/1.0.0) 
+[![](https://img.shields.io/badge/wallop_2.0.0-deployment_up-green)](https://github.com/gongahkia/wallop/releases/tag/2.0.0) 
 
 > [!NOTE]  
 > [`Wallop`](https://github.com/gongahkia/wallop) is now live at [https://wallop.vercel.app](https://wallop.vercel.app)!
