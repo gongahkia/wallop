@@ -6,7 +6,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardFooter } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
-import { ArrowLeft, Send } from "lucide-react"
+import { ArrowLeft, Send, Trophy, Frown } from "lucide-react"
 import { RandomBackground } from "@/components/RandomBackground"
 import { Avatar } from "@/components/Avatar"
 
@@ -19,7 +19,7 @@ const mockMatches = [
 const currentUser = {
   id: 1,
   name: "John Doe",
-  avatar: "/avatars/john-doe.jpg",
+  avatar: "https://i.pinimg.com/736x/18/16/0b/18160ba745948426c3ff62d666fb2ecf.jpg",
 }
 
 export default function IndividualChatPage() {
@@ -28,6 +28,7 @@ export default function IndividualChatPage() {
   const profile = mockMatches.find((match) => match.id === id)
   const [messages, setMessages] = useState<{ sender: string; text: string }[]>([])
   const [newMessage, setNewMessage] = useState("")
+  const [fightStatus, setFightStatus] = useState<"won" | "lost" | null>(null)
 
   if (!profile) {
     return <div>Profile not found</div>
@@ -38,11 +39,14 @@ export default function IndividualChatPage() {
     if (newMessage.trim()) {
       setMessages([...messages, { sender: "You", text: newMessage }])
       setNewMessage("")
-      // Simulate a response after a short delay
       setTimeout(() => {
         setMessages((prev) => [...prev, { sender: profile.name, text: "Ready to rumble? Let's set up our match!" }])
       }, 1000)
     }
+  }
+
+  const handleFightOutcome = (outcome: "won" | "lost") => {
+    setFightStatus(outcome)
   }
 
   return (
@@ -61,6 +65,22 @@ export default function IndividualChatPage() {
                 <h2 className="text-2xl font-bold">{profile.name}</h2>
                 <div className="text-sm text-gray-500">{profile.style}</div>
               </div>
+            </div>
+            <div className="flex space-x-2">
+              <Button
+                variant={fightStatus === "won" ? "default" : "outline"}
+                size="sm"
+                onClick={() => handleFightOutcome("won")}
+              >
+                <Trophy className="mr-2 w-4 h-4" /> Won
+              </Button>
+              <Button
+                variant={fightStatus === "lost" ? "default" : "outline"}
+                size="sm"
+                onClick={() => handleFightOutcome("lost")}
+              >
+                <Frown className="mr-2 w-4 h-4" /> Lost
+              </Button>
             </div>
           </CardHeader>
           <CardContent className="flex-grow overflow-y-auto p-4">
