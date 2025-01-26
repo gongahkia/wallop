@@ -20,7 +20,7 @@ export default function AboutPage() {
               <p>
                 Source code can be found{" "}
                 <Link
-                  href="https://github.com/gongahkia/piranesi"
+                  href="https://github.com/gongahkia/wallop"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-500 hover:underline"
