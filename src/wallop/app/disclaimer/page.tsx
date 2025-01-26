@@ -8,7 +8,7 @@ export default function DisclaimerPage() {
         <h1 className="text-3xl font-bold mb-6 text-center">Legal Disclaimer</h1>
         <div className="space-y-4 text-sm">
           <p>
-            Welcome to Wallop, the fictional app where "Equal rights" meets "Equal fights". Before you proceed, please
+            Welcome to Wallop, the fictional app where &quot;Equal rights&quot; meets &quot;Equal fights&quot;. Before you proceed, please
             read this important disclaimer:
           </p>
           <ol className="list-decimal list-inside space-y-2">
@@ -32,7 +32,7 @@ export default function DisclaimerPage() {
             </li>
           </ol>
           <p>
-            By clicking "I Understand", you confirm that you are of legal age, have a sense of humor, and solemnly swear
+            By clicking &quot;I Understand&quot;, you confirm that you are of legal age, have a sense of humor, and solemnly swear
             you are up to no good (in a strictly fictional sense).
           </p>
         </div>

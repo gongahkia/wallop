@@ -8,7 +8,7 @@ export default function LandingPage() {
       <div className="min-h-screen flex flex-col items-center justify-center">
         <main className="text-center">
           <h1 className="text-6xl font-bold text-white mb-4">Wallop</h1>
-          <p className="text-2xl text-white mb-8">"Equal rights, equal fights"</p>
+          <p className="text-2xl text-white mb-8">&quot;Equal rights, equal fights&quot;</p>
           <div className="space-y-4">
             <Button asChild className="w-64">
               <Link href="/disclaimer">Enter the Arena</Link>
