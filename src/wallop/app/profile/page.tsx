@@ -8,6 +8,7 @@ import { Label } from "@/components/ui/label"
 import { Switch } from "@/components/ui/switch"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { RandomBackground } from "@/components/RandomBackground"
+import { Avatar } from "@/components/Avatar"
 
 export default function ProfileAndSettingsPage() {
   const [profile, setProfile] = useState({
@@ -15,6 +16,7 @@ export default function ProfileAndSettingsPage() {
     age: 30,
     style: "Mixed Martial Arts",
     bio: "Ready to rumble!",
+    avatar: "/avatars/john-doe.jpg",
   })
 
   const [settings, setSettings] = useState({
@@ -30,6 +32,7 @@ export default function ProfileAndSettingsPage() {
 
   const handleProfileSubmit = (e: React.FormEvent) => {
     e.preventDefault()
+    // Here you would typically send the updated profile to your backend
     console.log("Updated profile:", profile)
     alert("Profile updated successfully!")
   }
@@ -39,14 +42,15 @@ export default function ProfileAndSettingsPage() {
   }
 
   const handleSettingsSave = () => {
+    // Here you would typically send the updated settings to your backend
     console.log("Updated settings:", settings)
     alert("Settings saved successfully!")
   }
 
   return (
     <RandomBackground>
-      <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-4">
-        <Card className="w-full max-w-2xl">
+      <div className="min-h-screen flex flex-col items-center justify-center p-4">
+        <Card className="w-full max-w-2xl bg-white bg-opacity-90">
           <CardHeader>
             <CardTitle className="text-3xl font-bold text-center">Profile & Settings</CardTitle>
           </CardHeader>
@@ -58,6 +62,9 @@ export default function ProfileAndSettingsPage() {
               </TabsList>
               <TabsContent value="profile">
                 <form onSubmit={handleProfileSubmit} className="space-y-4">
+                  <div className="flex justify-center mb-4">
+                    <Avatar src={profile.avatar} alt={profile.name} size={100} />
+                  </div>
                   <div>
                     <Label htmlFor="name">Name</Label>
                     <Input id="name" value={profile.name} onChange={handleProfileChange} />
@@ -89,11 +96,19 @@ export default function ProfileAndSettingsPage() {
                   </div>
                   <div className="flex items-center justify-between">
                     <Label htmlFor="darkMode">Dark Mode</Label>
-                    <Switch id="darkMode" checked={settings.darkMode} onCheckedChange={() => handleToggle("darkMode")} />
+                    <Switch
+                      id="darkMode"
+                      checked={settings.darkMode}
+                      onCheckedChange={() => handleToggle("darkMode")}
+                    />
                   </div>
                   <div className="flex items-center justify-between">
                     <Label htmlFor="location">Share Location</Label>
-                    <Switch id="location" checked={settings.location} onCheckedChange={() => handleToggle("location")} />
+                    <Switch
+                      id="location"
+                      checked={settings.location}
+                      onCheckedChange={() => handleToggle("location")}
+                    />
                   </div>
                   <div className="flex items-center justify-between">
                     <Label htmlFor="privacy">Private Profile</Label>
