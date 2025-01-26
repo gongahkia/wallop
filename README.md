@@ -1,5 +1,5 @@
-[![](https://img.shields.io/badge/wallop_1.0.0-up-green)](https://github.com/gongahkia/imaya/releases/tag/1.0.0) 
-[![](https://img.shields.io/badge/wallop_2.0.0-up-green)](https://github.com/gongahkia/imaya/releases/tag/2.0.0) 
+[![](https://img.shields.io/badge/wallop_1.0.0-build_up-dark_green)](https://github.com/gongahkia/imaya/releases/tag/1.0.0) 
+[![](https://img.shields.io/badge/wallop_2.0.0-deployment_up-green)](https://github.com/gongahkia/imaya/releases/tag/2.0.0) 
 
 > [!NOTE]  
 > [`Wallop`](https://github.com/gongahkia/wallop) is now live at [https://wallop.vercel.app](https://wallop.vercel.app)!
@@ -31,12 +31,6 @@ We match fighters who want to throw hands without the bullshit. Calling all mart
 
 What are you waiting for? [Get started](#usage) with `Wallop` today!
 
-## Credit
-
-Concept-wise, `Wallop` takes much inspiration from [Rumblr](https://rumblr.webflow.io/). However, the idea for a *'tinder but for fighting'* app only really came to my attention after a conversation with [Jace Bong](https://www.linkedin.com/in/jace-bong-%F0%9F%91%BE-42b3841b1/?originalSubdomain=sg) in [IS111](https://www.reddit.com/r/SMU_Singapore/comments/14bouko/smu_is_tough_modules_and_is111/?rdt=39799) in my first semester of [university](https://www.smu.edu.sg/).
-
-I've slept on the idea until now, but hopefully I have done it justice.
-
 ## Usage
 
 [`Wallop`](https://github.com/gongahkia/wallop) is **NOW LIVE** at [https://wallop.vercel.app/](https://wallop.vercel.app/).
@@ -45,14 +39,17 @@ If you want to build [`Wallop`](https://github.com/gongahkia/wallop) locally, se
 
 ## Screenshot
 
-![](./asset/reference/screenshot-1.png)
-![](./asset/reference/screenshot-4.png)
-![](./asset/reference/screenshot-5.png)
-![](./asset/reference/screenshot-6.png)
-![](./asset/reference/screenshot-7.png)
-![](./asset/reference/screenshot-8.png)
-![](./asset/reference/screenshot-2.png)
-![](./asset/reference/screenshot-3.png)
+![](./asset/reference/wallop-v2/screenshot-1.png)
+![](./asset/reference/wallop-v2/screenshot-3.png)
+![](./asset/reference/wallop-v2/screenshot-4.png)
+![](./asset/reference/wallop-v2/screenshot-5.png)
+![](./asset/reference/wallop-v2/screenshot-6.png)
+![](./asset/reference/wallop-v2/screenshot-7.png)
+![](./asset/reference/wallop-v2/screenshot-8.png)
+![](./asset/reference/wallop-v2/screenshot-9.png)
+![](./asset/reference/wallop-v2/screenshot-2.png)
+![](./asset/reference/wallop-v2/screenshot-10.png)
+![](./asset/reference/wallop-v2/screenshot-11.png)
 
 ## Disclaimer
 
@@ -69,3 +66,9 @@ Any substantive similarity or resemblance to existing digital services, social p
 ### 3. User Acknowledgement
 
 By engaging with [`Wallop`](https://github.com/gongahkia/wallop), users acknowledge they are participating in a meta-commentary on social technology, digital interaction, and human connection and also understand its purely theoretical nature.
+
+## Credit
+
+Concept-wise, `Wallop` takes much inspiration from [Rumblr](https://rumblr.webflow.io/). However, the idea for a *'tinder but for fighting'* app only really came to my attention after a conversation with [Jace Bong](https://www.linkedin.com/in/jace-bong-%F0%9F%91%BE-42b3841b1/?originalSubdomain=sg) in [IS111](https://www.reddit.com/r/SMU_Singapore/comments/14bouko/smu_is_tough_modules_and_is111/?rdt=39799) in my first semester of [university](https://www.smu.edu.sg/).
+
+I've slept on the idea until now, but hopefully I have done it justice.
