@@ -10,9 +10,9 @@ import { RandomBackground } from "@/components/RandomBackground"
 import { Avatar } from "@/components/Avatar"
 
 const mockMatches = [
-  { id: 51, name: "Elias Drake", age: 34, style: "Shadow Arts", bio: "The unseen strikes the hardest.", avatar: "https://images.pexels.com/photos/2903985/pexels-photo-2903985.jpeg", fightStatus: "won" },
-  { id: 52, name: "Selina Frost", age: 27, style: "Ice Dancer", bio: "Grace in the cold's embrace.", avatar: "https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg", fightStatus: "lost" },
-  { id: 53, name: "Axel Fury", age: 29, style: "Flame Combat", bio: "Burn brighter, fight harder.", avatar: "https://images.pexels.com/photos/1671325/pexels-photo-1671325.jpeg", fightStatus: null },
+  { id: 51, name: "Christofer Loy", age: 34, style: "Shadow Arts", bio: "The unseen strikes the hardest.", avatar: "https://images.pexels.com/photos/2903985/pexels-photo-2903985.jpeg", fightStatus: "won" },
+  { id: 52, name: "Sam Sulick", age: 27, style: "Ice Dancer", bio: "Grace in the cold's embrace.", avatar: "https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg", fightStatus: "lost" },
+  { id: 53, name: "Ah boy", age: 29, style: "Flame Combat", bio: "Burn brighter, fight harder.", avatar: "https://images.pexels.com/photos/1671325/pexels-photo-1671325.jpeg", fightStatus: null },
 ]
 
 export default function ProfilePage() {

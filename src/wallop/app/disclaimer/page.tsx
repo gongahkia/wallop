@@ -17,7 +17,7 @@ export default function DisclaimerPage() {
               violence in any form.
             </li>
             <li>
-              Any resemblance to real persons or actual fighting services is purely coincidental and unintentional.
+              Any resemblance to real persons or actual fighting services is <strong>purely coincidental and unintentional</strong>.
             </li>
             <li>
               By using this app, you acknowledge that all content, matches, and interactions are fictional and for

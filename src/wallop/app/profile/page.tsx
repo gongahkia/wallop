@@ -12,7 +12,7 @@ import { Avatar } from "@/components/Avatar"
 
 export default function ProfileAndSettingsPage() {
   const [profile, setProfile] = useState({
-    name: "John Doe",
+    name: "Faid Ding",
     age: 30,
     style: "Mixed Martial Arts",
     bio: "Ready to rumble!",
