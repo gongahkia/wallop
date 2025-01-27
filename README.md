@@ -61,7 +61,7 @@ Please be aware that while [`Wallop`](https://github.com/gongahkia/wallop) is a 
 
 ### 2. Resemblance
 
-Any substantive similarity or resemblance to existing digital services, social platforms, or human behavioral patterns is purely coincidental and constitutes part of [`Wallop`](https://github.com/gongahkia/wallop)'s satirical methodology. [`Wallop`](https://github.com/gongahkia/wallop) therefore expressly disclaims any intentional reference to or imitation of any existing digital services, social platforms, or human behavioral patterns. 
+Any substantive similarity or resemblance to existing digital services, social platforms, human behavioral patterns or actual persons is purely coincidental and constitutes part of [`Wallop`](https://github.com/gongahkia/wallop)'s satirical methodology. [`Wallop`](https://github.com/gongahkia/wallop) therefore expressly disclaims any intentional reference to or imitation of any existing digital services, social platforms, human behavioral patterns or persons. 
 
 ### 3. User Acknowledgement
 
