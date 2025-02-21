@@ -1,8 +1,9 @@
 [![](https://img.shields.io/badge/wallop_1.0.0-build_up-dark_green)](https://github.com/gongahkia/wallop/releases/tag/1.0.0) 
-[![](https://img.shields.io/badge/wallop_2.0.0-deployment_up-green)](https://github.com/gongahkia/wallop/releases/tag/2.0.0) 
+[![](https://img.shields.io/badge/wallop_2.0.0-build_up-dark_green)](https://github.com/gongahkia/wallop/releases/tag/1.0.0) 
+![](https://img.shields.io/badge/wallop_2.0.0-deployment_down-red)
 
-> [!NOTE]  
-> [`Wallop`](https://github.com/gongahkia/wallop) is now live at [https://wallop-swart.vercel.app/](https://wallop-swart.vercel.app/)!
+> [!WARNING]  
+> [`Wallop`](https://github.com/gongahkia/wallop)'s Vercel deployment is inactive as of 21 February 2025.
   
 > [!IMPORTANT]  
 > Please read through [this disclaimer](#disclaimer) before using [Wallop](https://github.com/gongahkia/wallop).
@@ -36,6 +37,108 @@ What are you waiting for? [Get started](#usage) with `Wallop` today!
 [`Wallop`](https://github.com/gongahkia/wallop) is **NOW LIVE** at [https://wallop-swart.vercel.app/](https://wallop-swart.vercel.app/).
 
 If you want to build [`Wallop`](https://github.com/gongahkia/wallop) locally, see instructions [here](./src/README.md).
+
+## Architecture
+
+### Overview
+
+```mermaid
+sequenceDiagram
+    participant F as Frontend
+    participant FA as FastAPI Backend
+    participant S as Supabase
+    
+    F->>FA: Send API request with access token
+    FA->>FA: Validate token in middleware
+    FA->>S: Authenticate user with Supabase client
+    S-->>FA: Return authenticated user data
+    FA->>FA: Add user_id to request state
+    FA->>S: Make authenticated DB query
+    S-->>FA: Return query results
+    FA-->>F: Send API response
+
+    F->>S: Direct auth requests (login/signup)
+    S-->>F: Return access token
+
+    F->>FA: Subsequent API requests with token
+    FA->>S: Authenticated operations
+    S-->>FA: Return results
+    FA-->>F: Send API response
+```
+
+### DB
+
+```mermaid
+classDiagram
+    class Users {
+        +int user_id PK
+        +string username
+        +string email
+        +string password_hash
+        +date birthdate
+        +string gender
+        +string bio
+        +string profile_picture
+        +float rating
+        +datetime created_at
+        +datetime last_login
+    }
+    class FightingStyles {
+        +int style_id PK
+        +string style_name
+    }
+    class UserStyles {
+        +int user_style_id PK
+        +int user_id FK
+        +int style_id FK
+        +int proficiency_level
+    }
+    class Matches {
+        +int match_id PK
+        +int user1_id FK
+        +int user2_id FK
+        +datetime match_date
+        +string status
+    }
+    class Messages {
+        +int message_id PK
+        +int match_id FK
+        +int sender_id FK
+        +int receiver_id FK
+        +string message_text
+        +datetime timestamp
+    }
+    class Fights {
+        +int fight_id PK
+        +int match_id FK
+        +datetime fight_date
+        +string location
+        +string result
+    }
+    class UserPreferences {
+        +int preference_id PK
+        +int user_id FK
+        +int min_age
+        +int max_age
+        +float max_distance
+        +string preferred_styles
+    }
+    class UserLocation {
+        +int location_id PK
+        +int user_id FK
+        +float latitude
+        +float longitude
+        +datetime last_updated
+    }
+
+    Users "1" -- "0..*" UserStyles
+    Users "1" -- "0..*" Matches
+    Users "1" -- "1" UserPreferences
+    Users "1" -- "1" UserLocation
+    FightingStyles "1" -- "0..*" UserStyles
+    Matches "1" -- "0..*" Messages
+    Matches "1" -- "0..1" Fights
+```
 
 ## Screenshot
 
