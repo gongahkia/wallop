@@ -34,9 +34,7 @@ What are you waiting for? [Get started](#usage) with `Wallop` today!
 
 ## Usage
 
-[`Wallop`](https://github.com/gongahkia/wallop) is **NOW LIVE** at [https://wallop-swart.vercel.app/](https://wallop-swart.vercel.app/).
-
-If you want to build [`Wallop`](https://github.com/gongahkia/wallop) locally, see instructions [here](./src/README.md).
+Build [`Wallop`](https://github.com/gongahkia/wallop) locally by following these instructions [here](./src/README.md).
 
 ## Architecture
 
